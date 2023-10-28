@@ -39,16 +39,16 @@ public class MainActivity extends AppCompatActivity {
 
         if (realm.isEmpty()){
             List<Signo> lista = new ArrayList();
-            lista.add(new Signo(R.drawable.ic_launcher_foreground, "Gato con botas", "El gato con botas es un héroe ficticio. Se basa en un gato con gorro, botas y una espada.", "#5CC03C", "#3CC0A0"));
-            lista.add(new Signo(R.drawable.ic_launcher_foreground, "Cíclope", "El cíclope es un ser mitológico con forma humana que mide alrededor de 4 metros y tiene un gran ojo en vez de 2.", "#BCC03C", "#7AC03C"));
-            lista.add(new Signo(R.drawable.ic_launcher_foreground, "Conejo mágico", "El conejo mágico ayudó a Alicia en el País de las Maravillas.", "#C04E3C", "#C0903C"));
-            lista.add(new Signo(R.drawable.ic_launcher_foreground, "Sirena", "La sirena es un ser mitológico que vive en el mar y le canta a los marineros.", "#156395", "#152395"));
-            lista.add(new Signo(R.drawable.ic_launcher_foreground, "Genio", "El genio es un ser mágico que concede 3 deseos al que frote su lámpara.", "#C03C7A", "#C0403C"));
-            lista.add(new Signo(R.drawable.ic_launcher_foreground, "Unicornio", "El unicornio es un ser mágico con forma de caballo con un cuerno en la frente.", "#D25E84", "#D2725E"));
-            lista.add(new Signo(R.drawable.ic_launcher_foreground, "Fénix", "El fénix es un ser mágico con forma de pájaro de fuego que revive cuando muere.", "#4D8D7E", "#4D7C8D"));
-            lista.add(new Signo(R.drawable.ic_launcher_foreground, "Caldero", "El caldero es un utensilio que usan las brujas para preparar sus pociones.", "#98E274", "#74E287"));
-            lista.add(new Signo(R.drawable.ic_launcher_foreground, "Excálibur", "La excalibur es una espada legendaria que solo una persona digna puede sacarla de la piedra en la que está atascada.", "#D9BB4C", "#B1D94C"));
-            lista.add(new Signo(R.drawable.ic_launcher_foreground, "Varita mágica", "La varita mágica es un utensilio que usan los magos para realizar hechizos mágicos.", "#743EC5", "#B73EC5"));
+            lista.add(new Signo(R.drawable.alfombra, "Gato con botas", "El gato con botas es un héroe ficticio. Se basa en un gato con gorro, botas y una espada.", "#5CC03C", "#3CC0A0"));
+            lista.add(new Signo(R.drawable.armario, "Cíclope", "El cíclope es un ser mitológico con forma humana que mide alrededor de 4 metros y tiene un gran ojo en vez de 2.", "#BCC03C", "#7AC03C"));
+            lista.add(new Signo(R.drawable.banera, "Conejo mágico", "El conejo mágico ayudó a Alicia en el País de las Maravillas.", "#C04E3C", "#C0903C"));
+            lista.add(new Signo(R.drawable.bano, "Sirena", "La sirena es un ser mitológico que vive en el mar y le canta a los marineros.", "#156395", "#152395"));
+            lista.add(new Signo(R.drawable.cacerola, "Genio", "El genio es un ser mágico que concede 3 deseos al que frote su lámpara.", "#C03C7A", "#C0403C"));
+            lista.add(new Signo(R.drawable.cama, "Unicornio", "El unicornio es un ser mágico con forma de caballo con un cuerno en la frente.", "#D25E84", "#D2725E"));
+            lista.add(new Signo(R.drawable.casa, "Fénix", "El fénix es un ser mágico con forma de pájaro de fuego que revive cuando muere.", "#4D8D7E", "#4D7C8D"));
+            lista.add(new Signo(R.drawable.cepillo, "Caldero", "El caldero es un utensilio que usan las brujas para preparar sus pociones.", "#98E274", "#74E287"));
+            lista.add(new Signo(R.drawable.champu, "Excálibur", "La excalibur es una espada legendaria que solo una persona digna puede sacarla de la piedra en la que está atascada.", "#D9BB4C", "#B1D94C"));
+            lista.add(new Signo(R.drawable.cocina, "Varita mágica", "La varita mágica es un utensilio que usan los magos para realizar hechizos mágicos.", "#743EC5", "#B73EC5"));
             realm.beginTransaction();
             realm.copyToRealmOrUpdate(lista);
             realm.commitTransaction();

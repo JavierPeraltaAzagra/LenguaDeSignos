@@ -91,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
             lista.add(new Signo(R.drawable.toalla, "Toalla"));
             lista.add(new Signo(R.drawable.vaso, "Vaso"));
             lista.add(new Signo(R.drawable.ventana, "Ventana"));
-            lista.add(new Signo(R.drawable.video, "Vídeo"));
+
 
 
 

@@ -51,18 +51,16 @@ public class RecyclerDataAdapter extends RecyclerView.Adapter<RecyclerDataAdapte
 
         public void assignData(Signo signo, OnItemClickListener listener) {
             textView.setText(signo.getTitulo());
-            textView.setBackgroundColor(Color.parseColor(signo.getBgTitulo()));
             imageView.setImageResource(signo.getImagen());
-            imageView.setBackgroundColor(Color.parseColor(signo.getBgImagen()));
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    listener.onItemClick(signo.getTitulo(), signo.getImagen(), signo.getDescripcion(), signo.getBgTitulo(), signo.getBgImagen(),getAdapterPosition());
+                    listener.onItemClick(signo.getTitulo(), signo.getImagen(),getAdapterPosition());
                 }
             });
         }
     }
     public interface OnItemClickListener{
-        void onItemClick(String titulo, int imagen, String descripcion, String bgTitulo, String bgDescripcion, int position);
+        void onItemClick(String titulo, int imagen, int position);
     }
 }

@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
 
 //        buscador = findViewById(R.id.buscador);
 
-        if (realm.isEmpty()) {
+        if (realm.isEmpty()){
             List<Signo> lista = new ArrayList();
             lista.add(new Signo(R.drawable.alfombra, "Alfombra"));
             lista.add(new Signo(R.drawable.armario, "Armario"));
@@ -92,25 +92,18 @@ public class MainActivity extends AppCompatActivity {
             lista.add(new Signo(R.drawable.vaso, "Vaso"));
             lista.add(new Signo(R.drawable.ventana, "Ventana"));
 
-
             realm.beginTransaction();
             realm.copyToRealmOrUpdate(lista);
             realm.commitTransaction();
         }
 
         results = realm.where(Signo.class).findAll();
-
         recyclerDataAdapter = new RecyclerDataAdapter(results, new RecyclerDataAdapter.OnItemClickListener() {
-
             @Override
-            public void onItemClick (String titulo,int imagen, String descripcion, String
-        bgTitulo, String bgDescripcion,int position) {
+            public void onItemClick(String titulo, int imagen, int position) {
                 Intent intent = new Intent(MainActivity.this, SecondActivity.class);
                 intent.putExtra("titulo", titulo);
                 intent.putExtra("imagen", imagen);
-                intent.putExtra("descripcion", descripcion);
-                intent.putExtra("bgTitulo", bgTitulo);
-                intent.putExtra("bgDescripcion", bgDescripcion);
                 startActivity(intent);
             }
         });

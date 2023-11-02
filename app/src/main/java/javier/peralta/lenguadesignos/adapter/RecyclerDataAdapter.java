@@ -62,5 +62,7 @@ public class RecyclerDataAdapter extends RecyclerView.Adapter<RecyclerDataAdapte
     }
     public interface OnItemClickListener{
         void onItemClick(String titulo, int imagen, int position);
+
+        void onItemClick(String titulo, int imagen, String descripcion, String bgTitulo, String bgDescripcion, int position);
     }
 }

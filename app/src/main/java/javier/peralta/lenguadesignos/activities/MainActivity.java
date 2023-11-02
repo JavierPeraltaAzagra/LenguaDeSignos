@@ -97,6 +97,7 @@ public class MainActivity extends AppCompatActivity {
             realm.commitTransaction();
         }
 
+
         results = realm.where(Signo.class).findAll();
         recyclerDataAdapter = new RecyclerDataAdapter(results, new RecyclerDataAdapter.OnItemClickListener() {
             @Override

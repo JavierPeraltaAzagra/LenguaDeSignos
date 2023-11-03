@@ -6,6 +6,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.widget.EditText;
 
 import java.util.ArrayList;
@@ -21,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
     Realm realm;
     RealmResults<Signo> results;
+    List finalList = new ArrayList<>();
     RecyclerView recyclerView;
     RecyclerDataAdapter recyclerDataAdapter;
 
@@ -35,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
 
         recyclerView = findViewById(R.id.recycler_view);
 
-//        buscador = findViewById(R.id.buscador);
+        buscador = findViewById(R.id.buscador);
 
         if (realm.isEmpty()) {
             List<Signo> lista = new ArrayList();
@@ -503,30 +506,39 @@ public class MainActivity extends AppCompatActivity {
 
         // BUSCADOR
 
-//        buscador.addTextChangedListener(new TextWatcher() {
-//            @Override
-//            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-//
-//            }
-//
-//            @Override
-//            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-//
-//            }
-//
-//            @Override
-//            public void afterTextChanged(Editable editable) {
-//                List list = new ArrayList();
-//
-//                list = realm.where(Item.class).findAll();
-//                results = null;
-//                for (Object o:list) {
-//                    Item item = (Item) o;
-//                    if (item.getTitulo().startsWith(buscador.getText().toString())){
-//                        results += item;
-//                    }
-//                }
-//            }
-//        });
+        buscador.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+                List list = new ArrayList();
+                list = realm.where(Signo.class).findAll();
+                finalList.clear();
+                for (Object o:list) {
+                    Signo item = (Signo) o;
+                    if(item.getTitulo().toUpperCase().startsWith(buscador.getText().toString().toUpperCase())){
+                        finalList.add(item);
+                    }
+                }
+                recyclerDataAdapter = new RecyclerDataAdapter(finalList, new RecyclerDataAdapter.OnItemClickListener() {
+                    @Override
+                    public void onItemClick(String titulo, int imagen, int position) {
+                        Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+                        intent.putExtra("titulo", titulo);
+                        intent.putExtra("imagen", imagen);
+                        startActivity(intent);
+                    }
+                });
+                recyclerView.setAdapter(recyclerDataAdapter);
+            }
+        });
     }
 }

@@ -10,7 +10,7 @@
         android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:background="#E46363"
+        android:background="#FFFFFF"
         android:paddingTop="20dp"
         android:paddingBottom="20dp"
         tools:srcCompat="@tools:sample/avatars" />
@@ -19,9 +19,9 @@
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#E43E3E"
+        android:background="#FFFFFF"
         android:text="TextView"
         android:textAlignment="center"
-        android:textColor="#FAF6F6"
+        android:textColor="#000000"
         android:textSize="24sp" />
 </LinearLayout>

@@ -52,6 +52,8 @@ public class RecyclerDataAdapter extends RecyclerView.Adapter<RecyclerDataAdapte
         public void assignData(Signo signo, OnItemClickListener listener) {
             textView.setText(signo.getTitulo());
             imageView.setImageResource(signo.getImagen());
+            imageView.setBackgroundResource(R.drawable.borde);
+            textView.setBackgroundResource(R.drawable.borde);
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {

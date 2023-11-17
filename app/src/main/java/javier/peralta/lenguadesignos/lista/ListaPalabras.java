@@ -305,7 +305,6 @@ public class ListaPalabras {
 
 
         // Calendario
-        // Calendario
         lista.add(new Signo(R.drawable.calendario, "Calendario", "Calendario"));
         lista.add(new Signo(R.drawable.ano, "Año", "Calendario"));
         lista.add(new Signo(R.drawable.mes, "Mes", "Calendario"));

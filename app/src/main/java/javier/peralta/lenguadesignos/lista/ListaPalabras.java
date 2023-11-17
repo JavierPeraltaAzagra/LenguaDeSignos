@@ -192,7 +192,6 @@ public class ListaPalabras {
 
 
         // Colegio
-        // Colegio
         lista.add(new Signo(R.drawable.colegio, "Colegio", "Colegio"));
         lista.add(new Signo(R.drawable.abecedario, "Abecedario", "Colegio"));
         lista.add(new Signo(R.drawable.alumno, "Alumno/alumna", "Colegio"));
@@ -256,7 +255,6 @@ public class ListaPalabras {
 
 
 
-        // Ciudad
         // Ciudad
         lista.add(new Signo(R.drawable.ciudad, "Ciudad", "Ciudad"));
         lista.add(new Signo(R.drawable.acera, "Acera", "Ciudad"));
@@ -427,7 +425,6 @@ public class ListaPalabras {
 
 
 
-
         // Adjetivos, adverbios y verbos
         lista.add(new Signo(R.drawable.adjetivos, "Adjetivos", "Adjetivos, adverbios y verbos"));
         lista.add(new Signo(R.drawable.aburrido, "Aburrido/aburrida", "Adjetivos, adverbios y verbos"));
@@ -515,7 +512,7 @@ public class ListaPalabras {
         lista.add(new Signo(R.drawable.explicar, "Explicar", "Adjetivos, adverbios y verbos"));
         lista.add(new Signo(R.drawable.gritar, "Gritar", "Adjetivos, adverbios y verbos"));
         lista.add(new Signo(R.drawable.gustar, "Gustar", "Adjetivos, adverbios y verbos"));
-        lista.add(new Signo(R.drawable.hablar, "Hablar (Lengua de Signos)", "Adjetivos, adverbios y verbos"));
+        //lista.add(new Signo(R.drawable.hablar, "Hablar (Lengua de Signos)", "Adjetivos, adverbios y verbos"));
         lista.add(new Signo(R.drawable.hablar_oral, "Hablar (Lengua oral)", "Adjetivos, adverbios y verbos"));
         lista.add(new Signo(R.drawable.jugar, "Jugar", "Adjetivos, adverbios y verbos"));
         lista.add(new Signo(R.drawable.lavar_la_ropa, "Lavar la ropa", "Adjetivos, adverbios y verbos"));
@@ -532,8 +529,8 @@ public class ListaPalabras {
         lista.add(new Signo(R.drawable.cuando_presente_y_futuro, "¿Cuándo? (Presente y futuro)", "Saludos y preguntas"));
         lista.add(new Signo(R.drawable.cuanto, "¿Cuánto?", "Saludos y preguntas"));
         lista.add(new Signo(R.drawable.donde, "¿Dónde?", "Saludos y preguntas"));
-        lista.add(new Signo(R.drawable.por, "¿Por qué?", "Saludos y preguntas"));
-        lista.add(new Signo(R.drawable.para, "¿Para qué?", "Saludos y preguntas"));
+        //lista.add(new Signo(R.drawable.por, "¿Por qué?", "Saludos y preguntas"));
+        //lista.add(new Signo(R.drawable.para, "¿Para qué?", "Saludos y preguntas"));
         lista.add(new Signo(R.drawable.que_dia_es, "¿Qué día es?", "Saludos y preguntas"));
         lista.add(new Signo(R.drawable.que_dice, "¿Qué dice?", "Saludos y preguntas"));
         lista.add(new Signo(R.drawable.que, "¿Qué tal?", "Saludos y preguntas"));

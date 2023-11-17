@@ -6,4 +6,7 @@
     </style>
 
     <style name="Theme.LenguaDeSignos" parent="Base.Theme.LenguaDeSignos" />
+    <style name="SplashSignos" parent="Theme.LenguaDeSignos">
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+    </style>
 </resources>

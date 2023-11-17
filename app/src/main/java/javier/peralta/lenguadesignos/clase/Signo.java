@@ -10,18 +10,24 @@ public class Signo extends RealmObject {
     private int id;
     private int imagen;
     private String titulo;
+    private String categoria;
 
     public Signo(){}
 
-    public Signo(int imagen, String titulo) {
+    public Signo(int imagen, String titulo, String categoria) {
         this.id = MyApplication.itemID.incrementAndGet();
         this.imagen = imagen;
         this.titulo = titulo;
+        this.categoria = categoria;
     }
 
     public int getImagen() {return imagen;}
 
     public String getTitulo() {
         return titulo;
+    }
+
+    public String getCategoria() {
+        return categoria;
     }
 }

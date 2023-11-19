@@ -257,7 +257,6 @@ public class ListaPalabras {
 
 
 
-
         // Ciudad
         lista.add(new Signo(R.drawable.ciudad, "Ciudad", "Ciudad"));
         lista.add(new Signo(R.drawable.acera, "Acera", "Ciudad"));

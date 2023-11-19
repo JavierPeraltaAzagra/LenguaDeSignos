@@ -57,13 +57,13 @@ public class RecyclerDataAdapter extends RecyclerView.Adapter<RecyclerDataAdapte
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    listener.onItemClick(signo.getTitulo(), signo.getImagen(),getAdapterPosition());
+                    listener.onItemClick(signo.getTitulo(), signo.getImagen(), signo.getCategoria(),getAdapterPosition());
                 }
             });
         }
     }
      public interface OnItemClickListener{
-        void onItemClick(String titulo, int imagen, int position);
+        void onItemClick(String titulo, int imagen, String categoria, int position);
 
     }
 }

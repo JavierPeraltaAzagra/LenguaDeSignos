@@ -59,10 +59,11 @@ public class MainActivity extends AppCompatActivity {
         recyclerDataAdapter = new RecyclerDataAdapter(results, new RecyclerDataAdapter.OnItemClickListener() {
 
             @Override
-            public void onItemClick (String titulo,int imagen,int position) {
+            public void onItemClick (String titulo,int imagen, String categoria, int position) {
                 Intent intent = new Intent(MainActivity.this, SecondActivity.class);
                 intent.putExtra("titulo", titulo);
                 intent.putExtra("imagen", imagen);
+                intent.putExtra("categoria", categoria);
                 startActivity(intent);
             }
         });
@@ -95,10 +96,11 @@ public class MainActivity extends AppCompatActivity {
                 }
                 recyclerDataAdapter = new RecyclerDataAdapter(finalList, new RecyclerDataAdapter.OnItemClickListener() {
                     @Override
-                    public void onItemClick(String titulo, int imagen, int position) {
+                    public void onItemClick(String titulo, int imagen, String categoria, int position) {
                         Intent intent = new Intent(MainActivity.this, SecondActivity.class);
                         intent.putExtra("titulo", titulo);
                         intent.putExtra("imagen", imagen);
+                        intent.putExtra("categoria", categoria);
                         startActivity(intent);
                     }
                 });

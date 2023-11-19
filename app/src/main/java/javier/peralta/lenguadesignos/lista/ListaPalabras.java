@@ -1,6 +1,8 @@
 package javier.peralta.lenguadesignos.lista;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 import javier.peralta.lenguadesignos.R;
@@ -11,22 +13,21 @@ public class ListaPalabras {
     public static List<Signo> getList(){
         List<Signo> lista = new ArrayList<>();
 
-        // Familia
-        lista.add(new Signo(R.drawable.abajo, "Abajo", "Familia"));
-        lista.add(new Signo(R.drawable.abuelo, "Abuelo", "Familia"));
-        lista.add(new Signo(R.drawable.amigo, "Amigo", "Familia"));
-        lista.add(new Signo(R.drawable.bebe, "Bebé", "Familia"));
-        lista.add(new Signo(R.drawable.hermano, "Hermano", "Familia"));
-        lista.add(new Signo(R.drawable.mama, "Mamá", "Familia"));
-        lista.add(new Signo(R.drawable.nina, "Niña", "Familia"));
-        lista.add(new Signo(R.drawable.nino, "Niño", "Familia"));
-        lista.add(new Signo(R.drawable.papa, "Papá", "Familia"));
-        lista.add(new Signo(R.drawable.persona, "Persona", "Familia"));
-        lista.add(new Signo(R.drawable.primo, "Primo", "Familia"));
-        lista.add(new Signo(R.drawable.tio, "Tío", "Familia"));
-        lista.add(new Signo(R.drawable.ciego, "Ciego", "Familia"));
-        lista.add(new Signo(R.drawable.sordo, "Sordo", "Familia"));
-        lista.add(new Signo(R.drawable.sordociego, "Sordociego", "Familia"));
+        // Personas
+        lista.add(new Signo(R.drawable.abuelo, "Abuelo", "Personas"));
+        lista.add(new Signo(R.drawable.amigo, "Amigo", "Personas"));
+        lista.add(new Signo(R.drawable.bebe, "Bebé", "Personas"));
+        lista.add(new Signo(R.drawable.hermano, "Hermano", "Personas"));
+        lista.add(new Signo(R.drawable.mama, "Mamá", "Personas"));
+        lista.add(new Signo(R.drawable.nina, "Niña", "Personas"));
+        lista.add(new Signo(R.drawable.nino, "Niño", "Personas"));
+        lista.add(new Signo(R.drawable.papa, "Papá", "Personas"));
+        lista.add(new Signo(R.drawable.persona, "Persona", "Personas"));
+        lista.add(new Signo(R.drawable.primo, "Primo", "Personas"));
+        lista.add(new Signo(R.drawable.tio, "Tío", "Personas"));
+        lista.add(new Signo(R.drawable.ciego, "Ciego", "Personas"));
+        lista.add(new Signo(R.drawable.sordo, "Sordo", "Personas"));
+        lista.add(new Signo(R.drawable.sordociego, "Sordociego", "Personas"));
 
 
         // Comidas y bebidas
@@ -191,7 +192,7 @@ public class ListaPalabras {
         lista.add(new Signo(R.drawable.vaso, "Vaso", "Casa"));
 
 
-        // Colegio
+
         // Colegio
         lista.add(new Signo(R.drawable.colegio, "Colegio", "Colegio"));
         lista.add(new Signo(R.drawable.abecedario, "Abecedario", "Colegio"));
@@ -256,7 +257,7 @@ public class ListaPalabras {
 
 
 
-        // Ciudad
+
         // Ciudad
         lista.add(new Signo(R.drawable.ciudad, "Ciudad", "Ciudad"));
         lista.add(new Signo(R.drawable.acera, "Acera", "Ciudad"));
@@ -515,7 +516,7 @@ public class ListaPalabras {
         lista.add(new Signo(R.drawable.explicar, "Explicar", "Adjetivos, adverbios y verbos"));
         lista.add(new Signo(R.drawable.gritar, "Gritar", "Adjetivos, adverbios y verbos"));
         lista.add(new Signo(R.drawable.gustar, "Gustar", "Adjetivos, adverbios y verbos"));
-        lista.add(new Signo(R.drawable.hablar, "Hablar (Lengua de Signos)", "Adjetivos, adverbios y verbos"));
+        //lista.add(new Signo(R.drawable.hablar, "Hablar (Lengua de Signos)", "Adjetivos, adverbios y verbos"));
         lista.add(new Signo(R.drawable.hablar_oral, "Hablar (Lengua oral)", "Adjetivos, adverbios y verbos"));
         lista.add(new Signo(R.drawable.jugar, "Jugar", "Adjetivos, adverbios y verbos"));
         lista.add(new Signo(R.drawable.lavar_la_ropa, "Lavar la ropa", "Adjetivos, adverbios y verbos"));
@@ -532,8 +533,8 @@ public class ListaPalabras {
         lista.add(new Signo(R.drawable.cuando_presente_y_futuro, "¿Cuándo? (Presente y futuro)", "Saludos y preguntas"));
         lista.add(new Signo(R.drawable.cuanto, "¿Cuánto?", "Saludos y preguntas"));
         lista.add(new Signo(R.drawable.donde, "¿Dónde?", "Saludos y preguntas"));
-        lista.add(new Signo(R.drawable.por, "¿Por qué?", "Saludos y preguntas"));
-        lista.add(new Signo(R.drawable.para, "¿Para qué?", "Saludos y preguntas"));
+        //lista.add(new Signo(R.drawable.por, "¿Por qué?", "Saludos y preguntas"));
+        //lista.add(new Signo(R.drawable.para, "¿Para qué?", "Saludos y preguntas"));
         lista.add(new Signo(R.drawable.que_dia_es, "¿Qué día es?", "Saludos y preguntas"));
         lista.add(new Signo(R.drawable.que_dice, "¿Qué dice?", "Saludos y preguntas"));
         lista.add(new Signo(R.drawable.que, "¿Qué tal?", "Saludos y preguntas"));
@@ -555,6 +556,9 @@ public class ListaPalabras {
         lista.add(new Signo(R.drawable.por_favor, "Por favor", "Saludos y preguntas"));
         lista.add(new Signo(R.drawable.si, "Sí", "Saludos y preguntas"));
         lista.add(new Signo(R.drawable.signo, "Signo", "Saludos y preguntas"));
+
+
+        Collections.sort(lista, Comparator.comparing(Signo::getTitulo));
         return lista;
     }
 
